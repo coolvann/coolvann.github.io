@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: #f5f5f5;
+  }
+
+  /* 左侧侧栏 */
+  .sidebar {
+    width: 260px;
+    background: white;
+    padding: 30px 20px;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .name {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .info {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .info div {
+    margin-bottom: 10px;
+  }
+
+  /* 右侧内容区 */
+  .content {
+    flex: 1;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 22px;
+    color: #2980b9;
+    text-decoration: none;
+  }
+
+  .project-image {
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- 左侧侧栏 -->
+  <div class="sidebar">
+    <img src="images/avatar.png" class="avatar" alt="avatar"> 
+
+    <div class="name">Fuzi Yang</div>
+
+    <div class="info">
+      <div>📍 Warsaw, Poland</div>
+      <div>✉️ Email</div>
+      <div>🐙 GitHub</div>
+    </div>
+  </div>
+
+  <!-- 右侧主内容 -->
+  <div class="content">
+    <h1>Portfolio</h1>
+
+    <a class="project-title" href="#">Portfolio item number 1</a>
+    <p>Short description of portfolio item number 1</p>
+
+    <img src="images/project1.png" class="project-image" alt="project">
+  </div>
+
+</body>
+</html>
